@@ -1,0 +1,5 @@
+
+void stringCalculator() {
+
+	return;
+}
