@@ -1,6 +1,8 @@
 #include "StringCalculator.hpp"
+#include <string>
+using std::string;
 
-void stringCalculator() {
+int stringCalculator(string equation) {
 
-	return;
+	return 1;
 }

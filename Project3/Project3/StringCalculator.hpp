@@ -1,4 +1,6 @@
 #ifndef STRINGCALC
 #define STRINGCALC
-void stringCalculator();
+#include <string>
+	using std::string;
+	int stringCalculator(string equation);
 #endif
