@@ -3,6 +3,7 @@
 using std::string;
 
 int stringCalculator(string equation) {
-
-	return 0;
+	if (equation == "")
+		return 0;
+	return equation[0] - '0';
 }
