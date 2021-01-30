@@ -1,3 +1,4 @@
+#include "StringCalculator.hpp"
 
 void stringCalculator() {
 
