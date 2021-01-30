@@ -16,9 +16,10 @@ string word;
 string word2;
 
 word = equation.substr(0,index);
-word2 = equation.substr(index);
+word2 = equation.substr(index+1);
+
 
 std::cout << word << std::endl << word2;
 
-return 0;
+return std::stoi(word) + std::stoi(word2);
 }
