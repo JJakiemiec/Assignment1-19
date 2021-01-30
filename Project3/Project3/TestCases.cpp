@@ -5,3 +5,9 @@
 TEST_CASE("An empty string returns 0") {
 	REQUIRE(stringCalculator("") == 0);
 }
+
+TEST_CASE("A single number returns the value") {
+	REQUIRE(stringCalculator("1") == 1);
+	REQUIRE(stringCalculator("7") == 7);
+	REQUIRE(stringCalculator("0") == 0);
+}
