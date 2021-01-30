@@ -4,5 +4,5 @@ using std::string;
 
 int stringCalculator(string equation) {
 
-	return 1;
+	return 0;
 }
