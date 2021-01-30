@@ -16,5 +16,4 @@ REQUIRE(stringCalculator("3,2")==5);
 TEST_CASE("Two numbers, newline delimited, returns the sum") {
 	REQUIRE(stringCalculator("1 \n 2")==3);
 	REQUIRE(stringCalculator("4 \n 5")== 9);
-)
 }
