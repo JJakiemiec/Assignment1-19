@@ -5,9 +5,12 @@
 TEST_CASE("An empty string returns 0") {
 	REQUIRE(stringCalculator("") == 0);
 }
-
 TEST_CASE("A single number returns the value") {
 	REQUIRE(stringCalculator("1") == 1);
-	REQUIRE(stringCalculator("7") == 7);
-	REQUIRE(stringCalculator("0") == 0);
+	REQUIRE(stringCalculator("5")== 5);
+}
+TEST_CASE("Two numbers, comma delimited, returns the sum") {
+REQUIRE(stringCalculator("1,10")==11);
+REQUIRE(stringCalculator("3,2")==5);
+
 }
