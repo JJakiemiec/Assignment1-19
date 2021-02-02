@@ -14,6 +14,12 @@ REQUIRE(stringCalculator("1,10")==11);
 REQUIRE(stringCalculator("3,2")==5);
 }
 TEST_CASE("Two numbers, newline delimited, returns the sum") {
-	REQUIRE(stringCalculator("1 \n 2")==3);
-	REQUIRE(stringCalculator("4 \n 5")== 9);
+	REQUIRE(stringCalculator("1\n2")==3);
+	REQUIRE(stringCalculator("4\n5")== 9);
+}
+TEST_CASE("Three numbers, delimited either way, returns the sum") {
+	REQUIRE(stringCalculator("1,2,3") == 6);
+	REQUIRE(stringCalculator("1\n2\n3") == 6);
+	REQUIRE(stringCalculator("12,87\n43") == 12 + 87 + 43);
+	REQUIRE(stringCalculator("54\n32\n98") == 54 + 32 + 98);
 }
