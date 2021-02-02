@@ -11,6 +11,8 @@ int stringCalculator(string equation) {
 		}
 int index;
 index = equation.find(",");
+if (index == string::npos)
+index = equation.find("\n");
 
 string word;
 string word2;
